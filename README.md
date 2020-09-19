@@ -2,7 +2,9 @@
 
 ## Identifier the Speaker using Audio 
 
-you can verified this model using dataset audio
+This model train on five speaker audio dataset
+
+you can verified this model using audio which are in dataset folder
 
 ## requirement
 
