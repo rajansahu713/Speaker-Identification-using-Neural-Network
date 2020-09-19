@@ -1,0 +1,53 @@
+<html>  
+<head>  
+<title>success</title>
+    <link href="url_for('static', filename='style.css')" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+
+</head>  
+<style>
+body {
+    background: black;
+}
+
+#profile-wrapper {
+    text-align: center;
+}
+
+#profile-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+h5 {
+    color: red;
+    font-size: 36px;
+}
+</style>
+<body>  
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class ="card card-body h-100">
+                    <h5>Identified Speaker</h5>
+                    <hr>
+                    <p>File uploaded successfully</p>  
+                    {% for row in rows %}  
+                        <p>Speaker id : {{row["id"]}}</p> 
+                        <p>Speaker name : {{row["name"]}}</p>
+                        <p>Speaker Email : {{row["email"]}}</p>
+                        <p>Speaker Address : {{row["address"]}}</p>
+
+                    {% endfor %} 
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>  
+</html> 

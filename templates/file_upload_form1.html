@@ -1,0 +1,47 @@
+
+<html>  
+<head>  
+    <title>upload</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+</head> 
+<style> 
+body {
+    background:re;
+}
+
+#profile-wrapper {
+    text-align: center;
+}
+
+#profile-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+h5 {
+    color: red;
+    font-size: 36px;
+}
+</style>
+<body>  
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class ="card card-body h-100">
+                    <h5>Speaker Identification System</h5>
+                    <hr>
+                    <form action = "/success" method = "post" enctype="multipart/form-data">  
+                        <input type="file" name="file" />  
+                        <input type = "submit" value="Upload">  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>  
+</html>  
